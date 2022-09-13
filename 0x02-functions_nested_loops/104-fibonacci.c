@@ -11,14 +11,18 @@ int main(void)
 {
 	int n = 0, i, n2 = 1, n3;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 0; i <= 97; i++)
 	{
 		n3 = n + n2;
 		printf("%d", n3);
 		n = n2;
 		n2 = n3;
-		printf(", ");
+		if (i < 98)
+		{
+			printf(", ");
+		}
 	}
+	printf("\n");
 	return 0;
 
 }
