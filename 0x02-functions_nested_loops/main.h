@@ -57,5 +57,13 @@ int print_last_digit(int n);
  *
  */
 
+void jack_baeur(void);
+/**
+ * jack_baeur -main function
+ *
+ *Return: always 0
+ *
+ */
+
 #endif
 
