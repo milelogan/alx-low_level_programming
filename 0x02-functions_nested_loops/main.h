@@ -49,7 +49,13 @@ int _abs(int r);
  *
  */
 
-
+int print_last_digit(int n);
+/**
+ * print_last_digit -main function
+ * 
+ *@n: is character
+ *
+ */
 
 #endif
 
