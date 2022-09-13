@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jac_bauer - main function
+ * jac_bauer(void) - main function
  *
  * Return: always 0.
  */
