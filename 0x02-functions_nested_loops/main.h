@@ -74,5 +74,11 @@ int add(int x, int y);
  *
  */
 
+void times_table(void);
+/**
+ * times_table - main function
+ *
+ */
+
 #endif
 
