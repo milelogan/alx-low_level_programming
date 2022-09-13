@@ -41,7 +41,13 @@ int print_sign(int n);
   * Return: 1 or 0 or -1
   */
 
-
+int _abs(int r);
+/**
+ * _abs - main funtion
+ *
+ *@r: is character to compare
+ *
+ */
 
 
 

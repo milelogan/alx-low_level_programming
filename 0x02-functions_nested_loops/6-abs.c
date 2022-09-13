@@ -10,6 +10,12 @@
 
 int _abs(int r)
 {
-	(r > 0) ? return (r) : return (r * -1);
+	if(r > 0)
+	{
+		return (r);
+	}else
+	{
+		return (r * -1);
+	}
 	
 }
