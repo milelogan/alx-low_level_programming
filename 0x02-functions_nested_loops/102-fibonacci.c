@@ -28,6 +28,6 @@ int main(void)
 			printf(", ");
 		}
 	}
-	printf("%d\n", counter);
+	printf("\n");
 	return (0);
 }
