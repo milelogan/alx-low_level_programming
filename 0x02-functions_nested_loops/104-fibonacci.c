@@ -9,26 +9,21 @@
 
 int main(void)
 {
-	int counter = 2;
+	int x;
 
-	double a = 1;
-	double b = a + 1;
-	double c = a + b;
+	double sum = 0;
+	double num = 1;
+	double num2 = 2;
 
-	printf("%.0f, ", a);
-	printf("%.0f, ", b);
+	printf("%.0f, ", num);
+	printf("%.0f, ", num2);
 
-	while (counter < 98)
+	for (x = 0; x < 96; x++)
 	{
-		counter++;
-		printf("%.0f", c);
-		a = b;
-		b = c;
-		c = a + b;
-		if (counter < 98)
-		{
-			printf(", ");
-		}
+		sum = num + num2;
+		num = num2;
+		num2 = sum;
+		printf(", %.f", sum);
 	}
 	printf("\n");
 	return (0);
