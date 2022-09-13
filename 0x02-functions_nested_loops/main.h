@@ -65,5 +65,14 @@ void jack_bauer(void);
  *
  */
 
+int add(int x, int y);
+/**
+ * add- main function
+ *
+ * @x: first number
+ * @y: second number
+ *
+ */
+
 #endif
 
