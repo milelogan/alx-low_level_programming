@@ -15,13 +15,13 @@ int main(void)
 	double b = a + 1;
 	double c = a + b;
 
-	printf("%lf, ", a);
-	printf("%lf, ", b);
+	printf("%.0f, ", a);
+	printf("%.0f, ", b);
 
 	while (counter < 98)
 	{
 		counter++;
-		printf("%lf", c);
+		printf("%.0f", c);
 		a = b;
 		b = c;
 		c = a + b;
