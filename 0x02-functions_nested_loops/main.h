@@ -80,5 +80,13 @@ void times_table(void);
  *
  */
 
+void print_to_98(int n);
+/**
+ * print_to_98 - main function
+ *
+ * @n: character
+ *
+ */
+
 #endif
 
