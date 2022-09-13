@@ -9,20 +9,28 @@
 
 int main(void)
 {
-	int n = 0, i, n2 = 1, n3;
+	int count = 2;
 
-	for (i = 0; i <= 97; i++)
+	float x = 1;
+	float y = x + 1;
+	float z = x + y;
+
+	printf("%.0f, ", x);
+	printf("%.0f, ", y);
+
+	for (count < 98)
 	{
-		n3 = n + n2;
-		printf("%d", n3);
-		n = n2;
-		n2 = n3;
-		if (i < 98)
+		count++;
+		printf("%.0f", z);
+		x = y;
+		y = z;
+		z = x + y;
+		if (count < 98)
 		{
 			printf(", ");
 		}
 	}
 	printf("\n");
-	return 0;
+	return (0);
 
 }
