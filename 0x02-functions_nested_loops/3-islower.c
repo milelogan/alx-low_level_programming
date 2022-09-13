@@ -3,7 +3,7 @@
 /**
  * _islower - main function
  *
- * @c is the character
+ * @c: is the character
  *
  * main - check the code.
  *

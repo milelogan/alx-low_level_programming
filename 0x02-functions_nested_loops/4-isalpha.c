@@ -4,7 +4,7 @@
 /**
  *_isalpha - main function
  *
- * @c - character to compare
+ * @c: character to compare
  *
  * main - check the code.
  *

@@ -3,7 +3,7 @@
 /**
  * print_sign - prints sign according to value of n
  *
- * n - character to compare
+ * @n: character to compare
  *
  * main - check the code.
  *
