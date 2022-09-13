@@ -18,7 +18,7 @@ int main(void)
 	printf("%.0f, ", x);
 	printf("%.0f, ", y);
 
-	for (count < 98)
+	while (count < 98)
 	{
 		count++;
 		printf("%.0f", z);
