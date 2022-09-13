@@ -20,7 +20,7 @@ int main(void)
 
 	while (counter < 98)
 	{
-		count++;
+		counter++;
 		printf("%.0f", c);
 		a = b;
 		b = c;
