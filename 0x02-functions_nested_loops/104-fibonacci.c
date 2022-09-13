@@ -11,17 +11,17 @@ int main(void)
 {
 	int counter = 2;
 
-	float a = 1;
-	float b = a + 1;
-	float c = a + b;
+	double a = 1;
+	double b = a + 1;
+	double c = a + b;
 
-	printf("%.0f, ", a);
-	printf("%.0f, ", b);
+	printf("%lf, ", a);
+	printf("%lf, ", b);
 
 	while (counter < 98)
 	{
 		counter++;
-		printf("%.0f", c);
+		printf("%lf", c);
 		a = b;
 		b = c;
 		c = a + b;
