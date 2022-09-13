@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+ * _islower - main function
  *
  * main - check the code.
  *

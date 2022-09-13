@@ -1,6 +1,8 @@
-#include <main.h>
+#include "main.h"
 
 /**
+ * print_sign - prints sign according to value of n
+ *
  * main - check the code.
  *
  * Return: always 0.
