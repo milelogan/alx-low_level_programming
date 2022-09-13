@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -10,13 +9,12 @@
 
 int main(void)
 {
-	int n = 0, i;
-	float n2 = 1, n3;
+	int n = 0, i, n2 = 1, n3;
 
 	for (i = 0; i <= 100; i++)
 	{
 		n3 = n + n2;
-		printf("%f", n3);
+		printf("%d", n3);
 		n = n2;
 		n2 = n3;
 	}
