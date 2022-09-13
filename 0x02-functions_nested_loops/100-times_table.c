@@ -19,12 +19,20 @@ void print_times_table(int n)
 				if (j == 0)
 				{
 					_putchar('0');
-				} else if (times <= 99)
+				} else if (times <= 9)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
+					_putchar(' ');
 					_putchar(times + '0');
+				} else if (times > 9 && <= 99) 
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((times / 10) + '0');
+					_putchar((times % 10) + '0');
 				} else
 				{
 					_putchar(',');
