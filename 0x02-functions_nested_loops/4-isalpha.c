@@ -4,6 +4,8 @@
 /**
  *_isalpha - main function
  *
+ * @c - character to compare
+ *
  * main - check the code.
  *
  * Return: always 0;
@@ -11,7 +13,7 @@
 
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z)' || (c >= 'A' && c <= 'Z'))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
 		return (1);
 	}

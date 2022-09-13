@@ -3,6 +3,8 @@
 /**
  * _islower - main function
  *
+ * @c is the character
+ *
  * main - check the code.
  *
  * Return: always 0.
