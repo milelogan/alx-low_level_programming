@@ -9,22 +9,22 @@
 
 int main(void)
 {
-	int x;
+	long int x;
 
-	double sum = 0;
-	double num = 1;
-	double num2 = 2;
-	double r0, r1, r2, r3, r4, r5;
+	long int sum = 0;
+	long int num = 1;
+	long it num2 = 2;
+	long int r0, r1, r2, r3, r4, r5;
 
-	printf("%.f, ", num);
-	printf("%.f, ", num2);
+	printf("%ld, ", num);
+	printf("%ld, ", num2);
 
 	for (x = 0; x < 91; x++)
 	{
 		sum = num + num2;
 		num = num2;
 		num2 = sum;
-		printf(", %.f", sum);
+		printf(", %ld", sum);
 	}
 
 	r4 = sum / 1000000000;
@@ -36,7 +36,7 @@ int main(void)
 	{
 		r0 = r4 + r2;
 		r5 = r3 + r1;
-		printf("%.f""%.f", r0, r5);
+		printf("%ld""%ld", r0, r5);
 		if (x != 96)
 		{
 			printf(",");
