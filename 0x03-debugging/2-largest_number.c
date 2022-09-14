@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** largest_number - main
+/** 
+ * largest_number - main
  * @a: first integer
  * @b: second integer
  * @c: third integer
