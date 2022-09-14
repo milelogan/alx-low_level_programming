@@ -29,10 +29,6 @@ int main(void)
 		{
 			printf(",");
 			printf(" ");
-		} else if (x > 91) 
-		{
-			printf((sum / 1000000000));
-			printf((sum % 1000000000));
 		}
 	}
 
