@@ -15,8 +15,8 @@ int main(void)
 	double num = 1;
 	double num2 = 2;
 
-	printf("%.0f, ", num);
-	printf("%.0f, ", num2);
+	printf("%.f, ", num);
+	printf("%.f, ", num2);
 
 	for (x = 0; x < 96; x++)
 	{
