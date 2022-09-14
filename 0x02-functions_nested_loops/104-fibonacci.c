@@ -14,17 +14,26 @@ int main(void)
 	long int sum = 0;
 	long int num = 1;
 	long int num2 = 2;
-	long int r0, r1, r2, r3, r4, r5;
 
 	printf("%ld, ", num);
 	printf("%ld, ", num2);
 
-	for (x = 0; x < 96; x++)
+	for (x = 0; x < 92; x++)
 	{
 		sum = num + num2;
 		num = num2;
 		num2 = sum;
 		printf(", %ld", sum);
+
+		if (x != 96)
+		{
+			printf(",");
+			printf(" ");
+		} else if (x > 91) 
+		{
+			printf((sum / 1000000000));
+			printf((sum % 1000000000));
+		}
 	}
 
 
