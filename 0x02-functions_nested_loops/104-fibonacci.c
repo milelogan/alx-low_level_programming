@@ -13,7 +13,7 @@ int main(void)
 
 	long int sum = 0;
 	long int num = 1;
-	long it num2 = 2;
+	long int num2 = 2;
 	long int r0, r1, r2, r3, r4, r5;
 
 	printf("%ld, ", num);
