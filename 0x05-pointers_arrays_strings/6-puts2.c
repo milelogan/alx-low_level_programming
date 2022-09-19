@@ -2,13 +2,13 @@
 #include "2-strlen.c"
 
 /**
- * _puts2 - main function
+ * puts2 - main function
  * @str: character
  *
  * Return: void
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int i;
 
