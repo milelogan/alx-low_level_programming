@@ -9,9 +9,11 @@
 
 int _strlen(char *s)
 {
-	for (int i = 0; i <= s; i++)
+	int count = 0;
+	for (int i = 0; i <= strlen(s); i++)
 	{
-
+		if (string[i] != '')
+			count++;
 	}
 	return (i);
 }
