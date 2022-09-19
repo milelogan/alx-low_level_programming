@@ -1,5 +1,5 @@
 #include "main.h"
-#include "4-print_rev.c"
+#include "2-strlen.c"
 
 /**
  * rev_string - main function
@@ -10,11 +10,13 @@
 
 void print_rev(char *s)
 {
-	int i;
+	int i, temp;
+	int len = _strlen(s);
 
-	for (i = 0; *s[i] < '\0'; i++)
+	for (i = 0; i < len / 2; i++)
 	{
-		_putchar(print_rev(*(s + i)));
+		temp = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = temp;
 	}
-	_putchar('\n');
 }
