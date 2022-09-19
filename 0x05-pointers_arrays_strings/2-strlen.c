@@ -1,6 +1,4 @@
 #include "main.h"
-#include <string.h>
-#include <stdio.h>
 
 /**
  * _strlen - main function
@@ -11,13 +9,10 @@
 
 int _strlen(char *s)
 {
-	int count = 0;
 	int i;
 
-	for (i = 0; i < strlen(s); i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] != '')
-			count++;
 	}
 	return (i);
 }
