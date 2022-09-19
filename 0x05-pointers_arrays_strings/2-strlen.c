@@ -14,7 +14,7 @@ int _strlen(char *s)
 	int count = 0;
 	for (int i = 0; i <= strlen(s); i++)
 	{
-		if (string[i] != '')
+		if (s[i] != '')
 			count++;
 	}
 	return (i);
