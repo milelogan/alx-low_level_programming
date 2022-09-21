@@ -2,19 +2,27 @@
 #include <stdio.h>
 
 /**
- * leet - main function
+ * leet - main funcion
  * @str: character
- *
  * Return: void
  */
 
 char *leet(char *str)
 {
-	int j = 0;
+	char alphaArr[] = "a4A4e3E3o0O0t7T7l1L1";
+	int i;
+	int j;
 
-	while (str[j] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		str[j] = str[j] - 30;
-		j++
+		for (j = 0; alphaArr[j] != '\0'; j++)
+		{
+			if (str[i] == alphaArr[j])
+			{
+				str[i] = alphaArr[j + 1];
+				break;
+			}
+		}
 	}
+	return (str);
 }
