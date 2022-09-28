@@ -33,7 +33,7 @@ int helper(int a, char *s)
 
 int is_palindrome(char *s)
 {
-	int i = 1;
+	int a = 1;
 
 	return (helper(a, s));
 }
