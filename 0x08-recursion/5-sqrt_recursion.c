@@ -1,26 +1,40 @@
 #include "main.h"
 
+
+/**
+ * rt - Entry point
+ * @n: int variable
+ * @x: int variable
+ *
+ * Return: x
+ */
+
+int rt(int n, int x)
+{
+	if (x * x == n)
+		return (x);
+
+	if (x > (n / 2))
+		return (-1);
+	x++;
+	x = rt(n, x);
+	return (x);
+}
+
+
 /**
  * _sqrt_recursion - recursive function of squareroot
  * @n: number
  * Return: void
  */
 
+
 int _sqrt_recursion(int n)
 {
-	int low = 0;
-	int high = n + 1;
-	if (high - low > 1)
-	{
-		int mid = (low + high) / 2;
-		if (mid * mid <= n)
-		{
-			low = mid;
-		}
-		else
-		{
-			high = mid;
-		}
-	}
-	return low;
+	if (n == 0 || n == 1)
+		return (n);
+	if (n < 0)
+		return (-1);
+
+	return (rt(n, 2));
 }
