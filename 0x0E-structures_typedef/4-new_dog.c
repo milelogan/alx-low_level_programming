@@ -1,0 +1,49 @@
+#include "dog.h"
+
+/**
+ * new_dog - struct function that creates new dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: of dog
+ * Return: dog object
+ */
+
+dog_t *new_dog(char *name, float age, char *owner)
+{
+	int i, len1, len2;
+	dog_t *wdog;
+	char *a, *b;
+
+	len1 = 0;
+	for (i = 0; name[i] != '\0'; i++)
+		len1++;
+	len2 = 0;
+	for (i = 0; owner[i] != '\0'; i++)
+		len2++;
+	wdog = malloc(sizeof(dog_t));
+	if (wdog == NULL)
+		return (NULL);
+	a = malloc((len1 + 1) * sizeof(char));
+	if (a == NULL)
+	{
+		free(ndog);
+		return (NULL);
+	}
+	for (i = 0; i < len1; i++)
+		a[i] = name[i];
+	a[i] = '\0';
+	wdog.name = a;
+	wdog.age = age;
+	b = malloc((len2 + 1) * sizeof(char));
+	if (b == NULL)
+	{
+		free(a);
+		free(wdog);
+		return (NULL);
+	}
+	for (i = 0; i < len2; i++)
+		b[i] = owner[i];
+	b[i] = '\0';
+	wdog.owner = b;
+	return (wdog);
+}
