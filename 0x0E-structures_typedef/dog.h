@@ -7,7 +7,6 @@
  * @name: name
  * @age: age of dog
  * @owner: owner of dog
- * Description: a struct dog that takes in some variables
  */
 
 typedef struct dog
